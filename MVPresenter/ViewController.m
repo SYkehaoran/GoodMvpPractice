@@ -7,17 +7,27 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
-
+#import "VansPresenter.h"
+@interface ViewController ()<VansProtocol>
+@property (weak, nonatomic) IBOutlet UIButton *nameButton;
+@property(nonatomic, strong) VansPresenter *presenter;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+
+    VansModel *model = [[VansModel alloc] init];
+    model.likeVans = YES;
+    self.presenter = [[VansPresenter alloc] initWithView:self model:model];
+}
+- (IBAction)buttonClick:(id)sender {
+    [self.presenter buttonClick];
 }
 
+-(void)changeName:(NSString *)name {
+    [self.nameButton setTitle:name forState:UIControlStateNormal];
+}
 
 @end

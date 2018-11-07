@@ -15,6 +15,8 @@
 		A66DFE2421918DBE00B94D8B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A66DFE2321918DBE00B94D8B /* main.m */; };
 		A66DFE2E21918DBE00B94D8B /* MVPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A66DFE2D21918DBE00B94D8B /* MVPresenterTests.m */; };
 		A66DFE3921918DBE00B94D8B /* MVPresenterUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A66DFE3821918DBE00B94D8B /* MVPresenterUITests.m */; };
+		A66DFE4821918DDF00B94D8B /* VansPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = A66DFE4721918DDF00B94D8B /* VansPresenter.m */; };
+		A66DFE4B21918DF700B94D8B /* VansModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A66DFE4A21918DF700B94D8B /* VansModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		A66DFE3421918DBE00B94D8B /* MVPresenterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPresenterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66DFE3821918DBE00B94D8B /* MVPresenterUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVPresenterUITests.m; sourceTree = "<group>"; };
 		A66DFE3A21918DBE00B94D8B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A66DFE4621918DDF00B94D8B /* VansPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VansPresenter.h; sourceTree = "<group>"; };
+		A66DFE4721918DDF00B94D8B /* VansPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VansPresenter.m; sourceTree = "<group>"; };
+		A66DFE4921918DF700B94D8B /* VansModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VansModel.h; sourceTree = "<group>"; };
+		A66DFE4A21918DF700B94D8B /* VansModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VansModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,10 @@
 			children = (
 				A66DFE1421918DBD00B94D8B /* AppDelegate.h */,
 				A66DFE1521918DBD00B94D8B /* AppDelegate.m */,
+				A66DFE4921918DF700B94D8B /* VansModel.h */,
+				A66DFE4A21918DF700B94D8B /* VansModel.m */,
+				A66DFE4621918DDF00B94D8B /* VansPresenter.h */,
+				A66DFE4721918DDF00B94D8B /* VansPresenter.m */,
 				A66DFE1721918DBD00B94D8B /* ViewController.h */,
 				A66DFE1821918DBD00B94D8B /* ViewController.m */,
 				A66DFE1A21918DBD00B94D8B /* Main.storyboard */,
@@ -262,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A66DFE4B21918DF700B94D8B /* VansModel.m in Sources */,
 				A66DFE1921918DBD00B94D8B /* ViewController.m in Sources */,
 				A66DFE2421918DBE00B94D8B /* main.m in Sources */,
+				A66DFE4821918DDF00B94D8B /* VansPresenter.m in Sources */,
 				A66DFE1621918DBD00B94D8B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
