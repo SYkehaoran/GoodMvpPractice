@@ -8,6 +8,7 @@
 
 #import "VansPresenter.h"
 
+#import "VansModel.h"
 @interface VansPresenter()
 @property(nonatomic, strong) id<VansProtocol> view;
 @property(nonatomic, strong) VansModel *model;
@@ -22,7 +23,9 @@
     }
     return self;
 }
--(void)buttonClick {
+
+- (void)changeTextViewDidClickButton {
+    
     if ([_view respondsToSelector:@selector(changeName:)]) {
         if (_model.likeVans) {
             
@@ -32,4 +35,5 @@
         }
     }
 }
+
 @end

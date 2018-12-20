@@ -8,9 +8,12 @@
 
 #import "ViewController.h"
 #import "VansPresenter.h"
+#import "ChangeTextView.h"
+#import "VansModel.h"
 @interface ViewController ()<VansProtocol>
-@property (weak, nonatomic) IBOutlet UIButton *nameButton;
+
 @property(nonatomic, strong) VansPresenter *presenter;
+@property(nonatomic, strong) ChangeTextView *textView;
 @end
 
 @implementation ViewController
@@ -18,16 +21,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    [self setupContentView];
+    
     VansModel *model = [[VansModel alloc] init];
     model.likeVans = YES;
     self.presenter = [[VansPresenter alloc] initWithView:self model:model];
+    self.textView.delegate = self.presenter;
 }
-- (IBAction)buttonClick:(id)sender {
-    [self.presenter buttonClick];
+
+- (void)setupContentView {
+    
+    ChangeTextView *view = [[ChangeTextView alloc] init];
+    self.textView = view;
+    [self.view addSubview:view];
+    view.center = self.view.center;
+    view.bounds = CGRectMake(0, 0, 200, 200);
+    view.backgroundColor = [UIColor blueColor];
 }
 
 -(void)changeName:(NSString *)name {
-    [self.nameButton setTitle:name forState:UIControlStateNormal];
+    [self.textView setName:name];
 }
 
 @end

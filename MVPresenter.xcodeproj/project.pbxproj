@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A632826B21CB6B5B00E6B8B0 /* ChangeTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = A632826A21CB6B5B00E6B8B0 /* ChangeTextView.m */; };
 		A66DFE1621918DBD00B94D8B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A66DFE1521918DBD00B94D8B /* AppDelegate.m */; };
 		A66DFE1921918DBD00B94D8B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A66DFE1821918DBD00B94D8B /* ViewController.m */; };
 		A66DFE1C21918DBD00B94D8B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A66DFE1A21918DBD00B94D8B /* Main.storyboard */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A632826921CB6B5B00E6B8B0 /* ChangeTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChangeTextView.h; sourceTree = "<group>"; };
+		A632826A21CB6B5B00E6B8B0 /* ChangeTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChangeTextView.m; sourceTree = "<group>"; };
 		A66DFE1121918DBD00B94D8B /* MVPresenter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPresenter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A66DFE1421918DBD00B94D8B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A66DFE1521918DBD00B94D8B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,6 +110,8 @@
 		A66DFE1321918DBD00B94D8B /* MVPresenter */ = {
 			isa = PBXGroup;
 			children = (
+				A632826921CB6B5B00E6B8B0 /* ChangeTextView.h */,
+				A632826A21CB6B5B00E6B8B0 /* ChangeTextView.m */,
 				A66DFE1421918DBD00B94D8B /* AppDelegate.h */,
 				A66DFE1521918DBD00B94D8B /* AppDelegate.m */,
 				A66DFE4921918DF700B94D8B /* VansModel.h */,
@@ -275,6 +280,7 @@
 				A66DFE4B21918DF700B94D8B /* VansModel.m in Sources */,
 				A66DFE1921918DBD00B94D8B /* ViewController.m in Sources */,
 				A66DFE2421918DBE00B94D8B /* main.m in Sources */,
+				A632826B21CB6B5B00E6B8B0 /* ChangeTextView.m in Sources */,
 				A66DFE4821918DDF00B94D8B /* VansPresenter.m in Sources */,
 				A66DFE1621918DBD00B94D8B /* AppDelegate.m in Sources */,
 			);

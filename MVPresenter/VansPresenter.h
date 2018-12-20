@@ -8,16 +8,17 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "VansModel.h"
+#import "ChangeTextView.h"
+@class VansModel;
 NS_ASSUME_NONNULL_BEGIN
 @protocol VansProtocol <NSObject>
 
 - (void)changeName:(NSString *)name;
 
 @end
-@interface VansPresenter : NSObject
+@interface VansPresenter : NSObject<ChangeTextViewDelegate>
 - (instancetype)initWithView:(id<VansProtocol>)view model:(VansModel *)model;
-- (void)buttonClick;
+
 @end
 
 NS_ASSUME_NONNULL_END
